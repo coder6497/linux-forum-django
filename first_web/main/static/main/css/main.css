@@ -1,0 +1,18 @@
+body {
+    background: #F5FFFA;
+}
+.navbar {
+    background: grey;
+    height: 45px;
+}
+.btn {
+    height: 35px;
+    position: relative;
+    margin-right: 10px;
+    border: 0px;
+}
+.nav-link{
+    position: relative;
+    top: -5px;
+    font-size: 16px;
+}
