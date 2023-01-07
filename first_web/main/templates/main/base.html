@@ -8,28 +8,18 @@
     <link rel="stylesheet" href="{%static 'main/css/main.css'%}">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/" >LinuxFans.org</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <button type="button" class="btn btn-outline-primary btn-sm">
-                    <a class="nav-link active" aria-current="page" href="/">Главная</a>
-                </button>
-            </li>
-            <li class="nav-item">
-                <button type="button" class="btn btn-outline-primary btn-sm">
-                    <a class="nav-link active" aria-current="page" href="/about">О сайте</a>
-                </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="{%url 'home'%}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">LinuxFans.org</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="{%url 'home'%}" class="nav-link active" aria-current="page">Главная</a></li>
+          <li class="nav-item"><a href="{%url 'notes_home'%}" class="nav-link">Темы</a></li>
+        <li class="nav-item"><a href="{%url 'about'%}" class="nav-link">О нас</a></li>
+      </ul>
+    </header>
   {%block body%}{%endblock%}
 </body>
 </html>
