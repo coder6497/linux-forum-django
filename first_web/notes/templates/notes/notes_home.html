@@ -9,4 +9,14 @@
             Здесь находятся документации и темы нашего сайта
         </p>
     </div>
+    <div class="container">
+            <div class="alert alert-success">
+                {%for elem in notes%}
+                    {{elem.user_name}}|
+                    {{elem.date_time}}
+                    <h2>{{elem.title}}</h2>
+                    {{elem.full_text}}
+                {%endfor%}
+            </div>
+        </div>
 {%endblock%}
