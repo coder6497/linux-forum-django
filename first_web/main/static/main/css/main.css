@@ -26,3 +26,6 @@ body {
     margin: 20px auto;
     width: 400px;
 }
+.features h3 {
+    text-color: red;
+}
